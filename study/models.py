@@ -6,6 +6,7 @@ class Topic(models.Model):
     name = models.CharField( max_length=250)
 
     def __str__(self):
+         # responsible to show name of class in admin area instead of object1
         return self.name
     
 
@@ -25,6 +26,9 @@ class Room(models.Model):
     # difference between the now and now_add is now_add only take time once 
     #  and then never update whereas auto_now update everytime with the update in function.
 
+    class Meta:
+        # orders of room in admin area 
+        ordering = ['-updated','-created']
 
 
     def __str__(self):
