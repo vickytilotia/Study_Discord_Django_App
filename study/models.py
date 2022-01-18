@@ -20,7 +20,8 @@ class Room(models.Model):
     topic = models.ForeignKey(Topic, on_delete=models.SET_NULL, null=True)
     name = models.CharField(max_length=250)
     description = models.TextField(blank=True, null=True)
-    # participants = 
+    # one room has multiple participants and one participant can join multiple group
+    participants = models.ManyToManyField(User, related_name='participants', blank=True)
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True) 
     # difference between the now and now_add is now_add only take time once 
@@ -40,6 +41,11 @@ class Message(models.Model):
     body = models.TextField()
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        # orders of room in admin area 
+        ordering = ['-updated','-created']
+
 
     def __str__(self):
         return self.body[0:50]
