@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,13 +11,23 @@
 
     {% block css %}
     {% endblock %}
-    
+
 </head>
+
 <body>
-    
+    {% include 'navbar.html' %}
     <h1>This is main page</h1>
+
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+            {% endfor %}
+    </ul>
+    {% endif %}
 
     {% block content %}
     {% endblock %}
 </body>
+
 </html>
