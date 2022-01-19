@@ -1,0 +1,15 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+
+<div>
+        <form method="POST" action="">
+            {% csrf_token %}
+            {{form.as_p}}
+            {% comment %} as_p wrap all elements with paragraph tags {% endcomment %}
+            <input type="submit" value="Submit"/>
+        </form>
+</div>
+
+{% endblock content%}
