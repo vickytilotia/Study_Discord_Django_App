@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'study.apps.StudyConfig',
     # for api
     'rest_framework',
+    # third party cannot access the data. We have to install cors header
+    "corsheaders",
 ]
 
 MIDDLEWARE = [
@@ -51,6 +53,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    # middleware for corsheaders
+    "corsheaders.middleware.CorsMiddleware",
 ]
 
 ROOT_URLCONF = 'study_discord.urls'
@@ -128,3 +133,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+
+# cors header allow all the website to access api data
+CORS_ALLOW_ALL_ORIGINS = True 

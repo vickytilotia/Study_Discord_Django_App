@@ -41,3 +41,6 @@ def getRoom(request, pk):
     # many means there are more than one objects to serialize
     serializer = RoomSerializer(room, many=False)
     return Response(serializer.data)
+
+# simply with all these, third party cannot access the data. We have to install cors header
+# python -m pip install django-cors-headers
