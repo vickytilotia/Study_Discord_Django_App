@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # Path to the study app
     'study.apps.StudyConfig',
+    # for api
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
