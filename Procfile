@@ -1,0 +1,1 @@
+web: gunicorn study_discord.wsgi --log-file -
