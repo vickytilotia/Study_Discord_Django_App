@@ -28,7 +28,7 @@ SECRET_KEY = os.environ['SECRET_KEY'] # for heroku
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['.herokuapp.com']
 
 
 # Application definition
@@ -130,6 +130,37 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+
+
+
+
+# save errors and logs 
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console'],
+             'level': os.getenv('DJANGO_LOG_LEVEL', 'DEBUG'),
+        },
+    },
+}
+
+
+
+
+
+
+
+
+
+
 
 
 # Static files (CSS, JavaScript, Images)
