@@ -1,6 +1,6 @@
 This is a Discord like study app.
 
-[Click here](https://www.google.com) to open this app.
+[Click here](https://www.google.com](https://vickytilotia.pythonanywhere.com/) to open this app.
 
 Features:-
 1. Users can create chat rooms(groups).
