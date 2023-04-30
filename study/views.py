@@ -154,7 +154,7 @@ def updateRoom(request,pk):
     form = RoomForm(instance = room)
 
     if request.user != room.host:
-        return httpResponse(' You are not allowed here')
+        return httpResponse('You are not allowed here')
 
     if request.method =="POST":
         topic_name = request.POST.get('topic')
