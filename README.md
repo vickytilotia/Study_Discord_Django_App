@@ -1,5 +1,7 @@
 This is a Discord like study app.
 
+[Google](https://www.google.com)
+
 Features:-
 1. Users can create chat rooms(groups).
 2. Users can join multiple groups and can share their views.
