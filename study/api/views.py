@@ -42,5 +42,5 @@ def getRoom(request, pk):
     serializer = RoomSerializer(room, many=False)
     return Response(serializer.data)
 
-# simply with all these, third party cannot access the data. We have to install cors header
+# For third party access, install cors header
 # python -m pip install django-cors-headers
