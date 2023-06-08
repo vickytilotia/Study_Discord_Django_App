@@ -1,16 +1,25 @@
-This is a Discord like study app.
+# StudyBuddy
 
-[Click here](https://vickytilotia.pythonanywhere.com/) to open this app.
+This is a Discord-like study app where students can create and join chat rooms, share views, browse topics, and manage their accounts.
 
-Features:-
+## Features
+
+```python
 1. Users can create chat rooms(groups).
 2. Users can join multiple groups and can share their views.
 3. This app has also API access.
-4. Users can browse through their faviourite topics and join them.
-5. Create Account, Send Message, Delete Message, Login or SignUp, Delete Room.
+4. Users can browse through their favorite topics and join them.
+5. Users can create an Account, Send a Message, Delete a Message, Login or sign up, and Delete a Room.
+```
 
-Framework Used- Django
+## Snapshots-
 ![Capture](https://user-images.githubusercontent.com/32337899/150351964-5e90a18e-49ea-4977-b23f-4f864cdf2b02.JPG)
-This is a Discord like study app
 
-Framework Used- Django
+## Useful commands
+
+
+```bash
+git clone https://github.com/vickytilotia/Study_Discord_Django_App
+
+```
+
