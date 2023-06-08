@@ -6,14 +6,9 @@ class Topic(models.Model):
     name = models.CharField( max_length=250)
 
     def __str__(self):
-         # responsible to show name of class in admin area instead of object1
+        # responsible to show name of class in admin area instead of object1
         return self.name
     
-
-
-
-
-# Create your models here.
 class Room(models.Model):
 
     host = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
@@ -25,7 +20,7 @@ class Room(models.Model):
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True) 
     # difference between the now and now_add is now_add only take time once 
-    #  and then never update whereas auto_now update everytime with the update in function.
+    # and then never update whereas auto_now update everytime with the update in function.
 
     class Meta:
         # orders of room in admin area 

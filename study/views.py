@@ -7,9 +7,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User
 # for django flash messages
 from django.contrib import messages
-
 from django.contrib.auth.decorators import login_required
-
 from django.contrib.auth.forms import UserCreationForm
 
 
@@ -38,8 +36,6 @@ def loginPage(request):
             return redirect('home')
         else:
             messages.error(request, 'Username or Password does NOT exist!!')
-
-
 
     context= {'page':page}
     return render(request, 'study/login_register.html', context)
