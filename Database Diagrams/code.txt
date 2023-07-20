@@ -1,0 +1,53 @@
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
+
+Table Topic{
+  id integer [primary key]
+  name varchar
+  
+}
+
+Table Room {
+  id integer [primary key]
+  host   integer
+  topic    integer
+  name    varchar
+  description    text
+  participants    integer
+  updated_at timestamp
+  created_at timestamp
+}
+
+Table Message {
+  id integer [primary key]
+  user    integer
+  room    integer
+  body    text
+  updated_at timestamp
+  created_at timestamp
+}
+
+Table User {
+  id integer [primary key]
+  password  varchar
+  last_login  datefield
+  is_superuser  bool
+  username  varchar
+  first_name  varchar
+  last_name  varchar
+  email  varchar
+  is_staff  bool
+  is_active  bool
+  date_joined timestamp
+}
+
+Ref: Message.id > User.id // many-to-one
+Ref: Message.room > Room.id // many-to-one
+Ref: Room.host > User.id // many-to-one
+Ref: Room.topic > Topic.id // many-to-one
+Ref: Room.participants > User.id // many-to-many
+
+
+
+
+
