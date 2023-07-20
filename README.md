@@ -2,6 +2,8 @@
 
 This is a Discord-like study app where students can create and join chat rooms, share views, browse topics, and manage their accounts.
 
+Project is [Live Here](vickytilotia.pythonanywhere.com/)
+
 ## Features
 
 ```python
@@ -20,6 +22,12 @@ This is a Discord-like study app where students can create and join chat rooms, 
 
 ```bash
 git clone https://github.com/vickytilotia/Study_Discord_Django_App
+
+#create a virtual environment
+python3 -m venv env
+
+#install required modules
+pip install -r requirements.txt
 
 ```
 
