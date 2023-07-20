@@ -1,8 +1,7 @@
-# StudyBuddy
+# StudyDiscord
+StudyDiscord is a Django web application designed to facilitate student interaction by providing chat rooms for discussion, topic browsing, and account management. Students can create and join chat rooms to share their views and ideas with others in a collaborative environment. The platform also offers API endpoints for seamless integration with other applications.
 
-This is a Discord-like study app where students can create and join chat rooms, share views, browse topics, and manage their accounts.
-
-Project is [Live Here](vickytilotia.pythonanywhere.com/)
+The project is [Live Here](https://vickytilotia.pythonanywhere.com/)
 
 ## Features
 
@@ -17,9 +16,11 @@ Project is [Live Here](vickytilotia.pythonanywhere.com/)
 ## Snapshots-
 ![Capture](https://user-images.githubusercontent.com/32337899/150351964-5e90a18e-49ea-4977-b23f-4f864cdf2b02.JPG)
 
+## Database Diagram
+![image](https://github.com/vickytilotia/Study_Discord_Django_App/assets/32337899/473e587c-ccbd-4722-be76-061ae3308639)
+
+
 ## Useful commands
-
-
 ```bash
 git clone https://github.com/vickytilotia/Study_Discord_Django_App
 
