@@ -12,6 +12,11 @@ The project is [Live Here](https://vickytilotia.pythonanywhere.com/)
 4. Users can browse through their favorite topics and join them.
 5. Users can create an Account, Send a Message, Delete a Message, Login or sign up, and Delete a Room.
 ```
+## Technology Used
+
+```python
+Python, Django, PostgreSQL, JS, RestAPI, Django Rest Framework, AWS
+```
 
 ## Snapshots-
 ![Capture](https://user-images.githubusercontent.com/32337899/150351964-5e90a18e-49ea-4977-b23f-4f864cdf2b02.JPG)
